@@ -43,3 +43,17 @@ Es el archivo de configuración del proyecto. Le indica a TypeScript:
 - `node`: Ejecuta código JavaScript plano (si intentas pasarle un archivo `.ts` directamente, Node fallará a menos que uses configuraciones experimentales o banderas especiales).
 
 - `tsx`: Es una herramienta moderna de desarrollo que permite ejecutar archivos TypeScript de forma directa al vuelo, compilando en memoria sin necesidad de generar archivos `.js` intermedios manualmente.
+
+## Tema 3: Tipos básicos
+
+**¿Qué son los tipos string, number y boolean?**
+Son los tipos primitivos. `string` es texto, `number` es cualquier número y `boolean` es verdadero o falso (`true` y `false`).
+
+**¿Cómo se declara un array con tipo?**
+Un array se declara con el tipo seguido de corchetes: `let numeros: number[] = [1, 2, 3];`
+
+**¿Qué es un tipo unión?**
+Es una variable que puede ser de uno u otro tipo, separados con `|`: `let id: string | number = "ABC123";`
+
+**¿Por qué se recomienda evitar any?**
+Porque `any` desactiva la verificación de tipos: no da error al escribir, pero el programa falla al ejecutar. Cuando no se conoce el tipo de un valor se usa `unknown`, que obliga a verificar antes de usarlo.
