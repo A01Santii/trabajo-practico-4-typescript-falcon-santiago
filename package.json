@@ -1,0 +1,27 @@
+{
+  "name": "trabajo-practico-4-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A01Santii/trabajo-practico-4-typescript-falcon-santiago.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/A01Santii/trabajo-practico-4-typescript-falcon-santiago/issues"
+  },
+  "homepage": "https://github.com/A01Santii/trabajo-practico-4-typescript-falcon-santiago#readme",
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
