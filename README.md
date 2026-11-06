@@ -87,3 +87,18 @@ Con `?` después del nombre de la propiedad: `edad?: number;`
 - `interface`: estructuras de objetos y clases, sobre todo cuando se necesita `extends`.
 - `type`: uniones, intersecciones, tipos literales y alias de primitivos.
 
+## Tema 6: Enums y tipos literales
+
+**¿Qué es un enum?**
+Enum es un conjunto de constantes con nombre: `enum Estado { PENDIENTE = "PENDIENTE", COMPLETADO = "COMPLETADO" }`. No es solo un tipo: TypeScript lo convierte en un objeto de JavaScript.
+
+**¿Qué es un tipo literal?**
+Es un tipo que solo acepta valores exactos: `type Rol = "ADMIN" | "USER" | "GUEST";`
+
+**¿En qué se parecen y en qué se diferencian?**
+- Se parecen en que los dos limitan una variable a un conjunto fijo de valores y TypeScript verifica que se respeten.
+- Se diferencian en que el enum genera código JavaScript (un objeto) y el tipo literal desaparece al compilar. Por eso el enum funciona con `tsx` y `tsc`, pero no con `node archivo.ts`.
+
+**¿En qué situaciones se puede usar cada uno?**
+- Enum: cuando se quiere un objeto con nombres (`Estado.PENDIENTE`) para usar en el código.
+- Tipo literal: para valores simples como roles o estados, y es compatible con cualquier herramienta.
