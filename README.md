@@ -102,3 +102,11 @@ Es un tipo que solo acepta valores exactos: `type Rol = "ADMIN" | "USER" | "GUES
 **¿En qué situaciones se puede usar cada uno?**
 - Enum: cuando se quiere un objeto con nombres (`Estado.PENDIENTE`) para usar en el código.
 - Tipo literal: para valores simples como roles o estados, y es compatible con cualquier herramienta.
+
+
+## Fuentes consultadas
+
+- Guía teórico-práctica "Introducción a TypeScript" (Unidad 4), Instituto Politécnico Formosa.
+- Documentación oficial de TypeScript: https://www.typescriptlang.org/docs/
+- Blog oficial de TypeScript (Microsoft): https://devblogs.microsoft.com/typescript/
+- Node.js: https://nodejs.org
