@@ -71,3 +71,19 @@ Es un parámetro que se puede omitir al llamar la función. Se marca con `?`: `a
 
 **¿Qué es un parámetro por defecto?**
 Es un parámetro que toma un valor si no se le pasa ninguno: `rol: string = "USER"`.
+
+## Tema 5: Interfaces y type
+
+**¿Qué es una interfaz y para qué sirve?**
+Una interfaz describe la forma de un objeto (sus propiedades y métodos). Sirve para estructuras de objetos y clases, sobre todo cuando se necesita `extends`. No existe en el JavaScript generado.
+
+**¿Qué es un type?**
+Un type es un alias que le pone nombre a un tipo. Sirve para uniones (`|`), intersecciones (`&`), tipos literales y alias de primitivos: `type ID = string | number;`
+
+**¿Cómo se declara una propiedad opcional?**
+Con `?` después del nombre de la propiedad: `edad?: number;`
+
+**¿Cuándo conviene usar cada uno?**
+- `interface`: estructuras de objetos y clases, sobre todo cuando se necesita `extends`.
+- `type`: uniones, intersecciones, tipos literales y alias de primitivos.
+
