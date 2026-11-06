@@ -57,3 +57,17 @@ Es una variable que puede ser de uno u otro tipo, separados con `|`: `let id: st
 
 **¿Por qué se recomienda evitar any?**
 Porque `any` desactiva la verificación de tipos: no da error al escribir, pero el programa falla al ejecutar. Cuando no se conoce el tipo de un valor se usa `unknown`, que obliga a verificar antes de usarlo.
+
+## Tema 4: Funciones
+
+**¿Cómo se indican los tipos de los parámetros?**
+Se indican después del nombre del parámetro, con dos puntos: `function sumar(a: number, b: number)`. Con `strict`, los parámetros sin tipo dan error.
+
+**¿Cómo se indica el tipo de retorno?**
+El tipo de retorno se indica después de los paréntesis: `function sumar(a: number, b: number): number`. Si la función no devuelve nada se usa `void`.
+
+**¿Qué es un parámetro opcional?**
+Es un parámetro que se puede omitir al llamar la función. Se marca con `?`: `apellido?: string`. Dentro de la función su tipo es `string | undefined`, por eso hay que verificarlo antes de usarlo.
+
+**¿Qué es un parámetro por defecto?**
+Es un parámetro que toma un valor si no se le pasa ninguno: `rol: string = "USER"`.
